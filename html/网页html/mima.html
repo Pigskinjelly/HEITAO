@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mima.css">
+    <script src="../js/mima.js"></script>
+    <script src="../js/live.js"></script>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+    <div class="box">
+        <h1>密码生成器</h1>
+
+        <div class="box-pasShow">
+            <input type="text">
+            <p class="clickCopy">
+                <span>点击复制</span>
+                <span>复制成功</span>
+            </p>
+        </div>
+        <div class="box-length">
+            <p class="length-text">长度: <span>11</span></p>
+            <div class="lengthbox">
+                <span>4</span>
+                <input type="range" max="32" min="4" step="1">
+                <span>32</span>
+            </div>
+        </div>
+        <div class="box-setting">
+            <p class="settingsbox"></p>
+            <div class="settingsbox">
+                <div class="setting">
+                    <input id="uppercase" type="text">
+                    <label for="uppercase">包含大写</label>
+                </div>
+                <div class="setting">
+                    <input id="lowercase" type="text">
+                    <label for="lowercase">包含小写</label>
+                </div>
+                <div class="setting">
+                    <input id="number" type="text">
+                    <label for="number">包含数字</label>
+                </div>
+                <div class="setting">
+                    <input id="symbol" type="text">
+                    <label for="symbol">包含字符</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="box-submit">
+            <input type="submit" value="生成密码">
+        </div>
+
+    </div>
+</body>
+</html>
